@@ -1,0 +1,167 @@
+body{
+	margin:0%;
+}
+#tank{
+	width:100%;
+	height:1000px;
+	background-color:white;
+
+}
+
+#top{
+    position: fixed;
+	width:100%;
+	height:60px;
+    background-color:#336799;
+    z-index: 15;
+	
+}
+
+#top img[src="Logout.png"]{
+	position: absolute;
+	top:20px;
+	right:15px;
+}
+
+#logoutContainer{
+   padding-left:900px; 
+   padding-top:20px; 
+   padding-bottom:15px;
+}
+
+
+#sidebar{
+    position: fixed;
+    top: 60px;
+	width:210px;
+	height:1000px;
+	background-color: #222A51;
+	float:left;
+	
+}
+
+#sidebar ul{
+	list-style-type: none;
+	
+    margin: 0;
+    padding: 0;
+    background-color: #222A51;
+	
+}
+
+#sidebar li a{
+    
+	display: block;
+    color: white;
+    padding: 35px 45px;
+    text-decoration: none;
+	
+}
+
+
+#sidebar li a:hover{
+ background-color: #555;
+    color: white;
+}
+
+#center{
+    position: absolute;
+    top: 60px;
+	left: 210px;
+	width:calc(100% - 210px);
+	height:100%;
+	background-color:white;
+
+	
+}
+
+#chatheader{
+		margin-top:20px;
+	margin-left:20px;
+	width:calc(100% - 60px);
+	position:center;
+	height:150px;
+	background-color: #222A51;
+    padding: 30px;
+    font-weight: lighter;
+    font-size: 50px;
+    letter-spacing: 0.1em;
+	text-align:center;
+	border-radius: 5px;
+	color:white;
+	
+	
+}
+
+#chatsearch{
+		margin-top:20px;
+	margin-left:20px;
+	width:calc(100% - 60px);
+	position:center;
+	height:50px;
+	background-color: lightgrey;
+    
+	padding-bottom:25px;
+    font-weight: lighter;
+    font-size: 50px;
+    letter-spacing: 0.1em;
+	text-align:center;
+	border-radius: 5px;
+	color:white;
+	
+	
+}
+
+#chatsearch select{
+	width:400px;
+}
+#chatsearch button{
+	
+	font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: rgb(14,120,168);
+    width: 100px;
+    border: 0;
+    padding: 15px;
+    color:white;
+    font-size: 17px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+	border-radius:5px;
+	
+}
+#chatsearch button:hover{
+	
+	background: rgb(41,92,151);
+	
+}
+
+
+#chatsearch a{
+	font-family: "Roboto", sans-serif;
+	font-size:20px; color:black;
+	
+}
+#chatbox{
+		margin-top:20px;
+	margin-left:20px;
+	width:calc(100% - 60px);
+	position:center;
+	height:350px;
+	background-color: lightgrey;
+    padding: 30px;
+    font-weight: lighter;
+    font-size: 50px;
+    letter-spacing: 0.1em;
+	text-align:center;
+	border-radius: 5px;
+	color:white;
+	
+}
+
+
+
+
+
+

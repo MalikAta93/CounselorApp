@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="MyProfileStyle.css">
+    <title>Home Page</title>
+    <script>
+        // function showSubmitInfo(){
+        //     document.getElementById('edit').style.display = "block";
+        // }
+    </script>   
+    <style>
+        @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+            fieldset, label { margin: 0; padding: 0; }
+            
+            /****** Style Star Rating Widget *****/
+            
+            .rating { 
+              border: none;
+              float: left;
+            }
+            
+            .rating > input { display: none; } 
+            .rating > label:before { 
+              margin: 5px;
+              font-size: 1.25em;
+              font-family: FontAwesome;
+              display: inline-block;
+              content: "\f005";
+            }
+            
+            .rating > .half:before { 
+              content: "\f089";
+              position: absolute;
+            }
+            
+            .rating > label { 
+              color: #ddd; 
+             float: right; 
+            }
+            
+            /***** CSS Magic to Highlight Stars on Hover *****/
+            
+            .rating > input:checked ~ label, /* show gold star when clicked */
+            .rating:not(:checked) > label:hover, /* hover current star */
+            .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+            
+            .rating > input:checked + label:hover, /* hover current star when changing rating */
+            .rating > input:checked ~ label:hover,
+            .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+            .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+    </style>
+</head>
+<body>
+    <div id="tank">
+    <div id="top">
+        <img src="CounselorLogo.png" width="210" height="60" alt="Mountain View">
+        <img src="Logout.png" width="25" height="25" alt="Mountain View">         
+    </div>
+    <div id="sidebar">
+        <ul>
+        <li><a href="Home.html"><img src ="Home.png"><br>Home</a></li>
+        <li><a href="MyProfile.html"><img src ="MyProfile.png"><br>My Profile</a></li>
+        <li><a href="CounselorSearch.html"><img src ="CounselorSearch.png"><br>Counselor Search</a></li>
+        <li><a href="Chat.html"><img src ="Chat.png"><br>Chat</a></li>
+        <li><a href="Faq.html"><img src ="Faq.png"><br>Faq</a></li></ul>     
+    </div>
+
+    <div id="center" style="padding: 20px;">
+        <div class="info" style="width: 100%">
+            <img src="rocket_science.jpg" alt="" style="width: 170px; height: 170px; border: thick double grey; float: left;">
+            <div id="user" style="float: left; margin-top: 30px; padding: 10px;">
+                    <fieldset class="rating" style="margin-right: 10px;">
+                        <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset> 
+                    <p id="counselor_rating" style="text-decoration: underline; color: grey;">4.5 stars</p>
+                    <h3 id="username">User Name</h3>
+                    <button id="chat" style="background-color: rgba(8, 131, 202, 0.911); color: white; font-size: 16px; border-radius: 4px; padding: 5px 20px;">Chat</button>
+                    <button id="rating" style="background-color: rgba(243, 186, 62, 0.911); color: white; font-size: 16px; border-radius: 4px; margin: 5px 0px 0px 5px; padding: 5px 10px;">Leave a Rating</button>
+            </div>
+        </div>        
+        <br>
+            
+        <div class="about_counselor" style="background-color: lightgrey; padding: 10px; float: left; margin-top: 20px; border-radius: 4px;">
+            <button style="background-color:cornflowerblue; font-size: 14px; color: white; padding: 5px;text-align: center" >About Me:</button> <br> <br>
+            <div class="my_info">
+                <textarea name="my_info" id="" cols="150" rows="10" style="background-color: white">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </textarea>
+            </div>
+        </div> <br>
+        <div class="certifications" style="background-color: lightgrey; padding: 10px; float: left; margin-top: 20px; border-radius: 4px;">
+            <button style="background-color:cornflowerblue; font-size: 14px; color: white; padding: 5px;text-align: center" >Certifications</button> <br> <br>
+            <div class="my_info">
+                <textarea name="my_info" id="" cols="150" rows="10" style="background-color: white">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </textarea>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

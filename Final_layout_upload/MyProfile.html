@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="MyProfileStyle.css">
+    <title>Home Page</title>
+    <script>
+        function showSubmitInfo(){
+            document.getElementById('edit').style.display = "block";
+        }
+    </script>   
+</head>
+<body>
+    <div id="tank">
+    <div id="top">
+        <img src="CounselorLogo.png" width="210" height="60" alt="Mountain View">
+        <img src="Logout.png" width="25" height="25" alt="Mountain View">         
+    </div>
+    <div id="sidebar">
+        <ul>
+        <li><a href="Home.html"><img src ="Home.png"><br>Home</a></li>
+        <li><a href="MyProfile.html"><img src ="MyProfile.png"><br>My Profile</a></li>
+        <li><a href="CounselorSearch.html"><img src ="CounselorSearch.png"><br>Counselor Search</a></li>
+        <li><a href="Chat.html"><img src ="Chat.png"><br>Chat</a></li>
+        <li><a href="Faq.html"><img src ="Faq.png"><br>Faq</a></li></ul>     
+    </div>
+
+    <div id="center" style="padding: 20px;">
+        <div class="info" style="width: 100%">
+            <img src="rocket_science.jpg" alt="" style="width: 150px; height: 150px; border: thick double grey; float: left;">
+            <div id="user" style="float: left; margin-top: 60px; padding: 10px">
+                    <h3 id="username">User Name</h3>
+                    <button id="usermajor" style="background-color: rgba(226, 80, 80, 0.911); color: white; font-size: 16px; border-radius: 4px; margin-top: 5px">User Major</button>
+            </div>
+           
+            <button id="changes" onClick="showSubmitInfo()" style="background-image: url('rsz_changes.png'); width: 100px; height: 50px; background-repeat: no-repeat; float: right"></button>
+        </div>        
+        <br>
+            
+        <div class="user_about" style="background-color: lightgrey; padding: 10px; float: left; margin-top: 20px; border-radius: 4px;">
+            <button style="background-color:cornflowerblue; font-size: 14px; color: white; padding: 5px;text-align: center" >About Me:</button> <br> <br>
+            <div class="my_info">
+                <textarea name="my_info" id="" cols="150" rows="10" style="background-color: white">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </textarea>
+            </div>
+        </div>
+        <div id="edit" style="display: none; float: left; margin-top: 20px; border: thick single blue">
+            <form id="userinfo" method="POST">
+                name: <input type="text" id="name"> <br>
+                major: <input type="text" name="major"> <br>
+                about me: <textarea name="about_me" id="" cols="30" rows="10"></textarea><br>
+                <button onclick="submitInfo()">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

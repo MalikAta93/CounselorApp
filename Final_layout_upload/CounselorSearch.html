@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="CounselorSearchStyle.css">
+
+
+<title>Home Page</title>
+
+
+</head>
+
+
+<body>
+
+<div id="tank">
+
+<div id="top">
+
+<img src="CounselorLogo.png" width="210" height="60" alt="Mountain View">
+<a href="login.html"><img src="Logout.png" width="25" height="25"></a>
+
+
+
+	
+	
+</div>
+
+<div id="sidebar">
+
+
+<ul>
+<li><a href="Home.html"><img src ="Home.png"><br>Home</a></li>
+<li><a href="MyProfile.html"><img src ="MyProfile.png"><br>My Profile</a></li>
+<li><a href="CounselorSearch.html"><img src ="CounselorSearch.png"><br>Counselor Search</a></li>
+<li><a href="Chat.html"><img src ="Chat.png"><br>Chat</a></li>
+<li><a href="Faq.html"><img src ="Faq.png"><br>Faq</a></li></ul>  
+
+
+</div>
+
+<div id="center">
+ 
+        <div id="header">
+            Counselor Search <img src="CI.png"  alt="Mountain View" class="logo">
+        </div>
+		
+		
+		
+       <div class="search_content">
+	   
+	   
+           <form action="search.html">
+		   <select>
+				
+				<option value="Name">Name</option>
+				<option value="Certification">Certification</option>
+
+			</select>
+               <input type="text" id="search" placeholder="Type a keyword..."> <br><br>
+               <input type="submit" value="Search">
+           </form>
+		   
+		   
+       </div>
+	   
+	   
+       <div class="view_content">
+           <h3>Spartan Counselors</h3>
+           <p>Not sure which counselor to search for? Click to view a complete list of counselors: 
+		   
+		   <button onclick="myFunction()">View Counselors</button>
+		   
+		   <div id="myDIV" style="display:none">
+		   
+			<a href="" >This is my DIV element.</a><br>
+			<a href="" >This is my DIV element.</a><br>
+			<a href="" >This is my DIV element.</a><br>
+			<a href="" >This is my DIV element.</a><br>
+			<a href="" >This is my DIV element.</a><br>
+			
+			</div>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+       </div>
+   
+   
+   
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+
+
+</html>

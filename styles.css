@@ -1,0 +1,54 @@
+.container{
+    font-family: sans-serif;
+    font-size: 12px;
+    display: inline-block;
+    position: right;
+    width:700px;
+}
+
+.header{
+    background-color: black;
+    margin: 0px;
+    border-radius: 5px;
+    color: white;
+    height: 100%;
+    padding: 10px;
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+.sidebar{
+    margin: 0px;
+    display: inline-block;
+    position: relative;
+}
+.search_content{
+    background-color: lightgrey;
+    padding: 20px;
+    text-align: center;
+}
+.search_content input#search{
+    width: 300px; 
+}
+
+.view_content{
+    border: thick black;
+    display: inline-block;
+    padding: 2px 0px;
+    background-color: rgb(247, 241, 241);
+    width: 100%;
+    text-align: center;
+
+}
+
+.view_content h3{
+    background-color: rgb(209, 204, 204);
+    padding: 10px;
+    margin:10px 0px;
+    height: 10px;
+}
+
+.p{
+    background-color: lightgrey;
+    padding: 10px; 
+}
