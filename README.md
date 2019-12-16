@@ -1,4 +1,4 @@
-# CounselorApp
+# Counselor Website
 Application for a counselor service at SJSU
 
 Spartan Tutor is a website built for the purpose of connecting students with counselors in San Jose State University. Sometimes in school it is hard to find
